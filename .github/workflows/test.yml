@@ -2,7 +2,12 @@ name: first github action
 on: [push]
 
 jobs:
-  my-first-job:
+  # my-first-job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - run: echo "hello world!!!"
+  copy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world!!!"
+      - uses: action/checkout@v2 #this will clone this repo
+      - run: tree
