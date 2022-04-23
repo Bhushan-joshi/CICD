@@ -1,8 +1,9 @@
 name : first github action
-on : [push]
+on : [ push ]
 jobs:
-	print-hello-world:
-		runs-on: ubuntu-latest
-		steps:
-			- run: echo "Hello world!!!"
-			- run: echo "This is my 2nd job"
+	my_job:
+			name: deploy to staging
+			runs-on: ubuntu-18.04
+			steps:
+				- run: echo "Hello world!!!"
+				- run: echo "This is my 2nd job" 
