@@ -13,5 +13,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
+      - name: "vite init"
+        run: npm i vite
       - name: "building....."
         run: yarn run build
