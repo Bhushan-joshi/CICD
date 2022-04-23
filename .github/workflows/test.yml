@@ -9,5 +9,5 @@ jobs:
   copy:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v2 #this will clone this repo
+      - uses: actions/checkout@v2 #this will clone this repo
       - run: tree
