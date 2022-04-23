@@ -1,8 +1,8 @@
-name: My  First github action
-on: [push]
+name : first github action
+on : [push]
 jobs:
 	print-hello-world:
 		runs-on: ubuntu-latest
 		steps:
-			- run: echo "hello world !!!"
-			- run: echo " This is step 2"
+			- run: echo "Hello world!!!"
+			- run: echo "This is my 2nd job"
