@@ -1,8 +1,5 @@
 name: first github action
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   my-first-job:
